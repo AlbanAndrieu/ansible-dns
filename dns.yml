@@ -1,0 +1,13 @@
+---
+- hosts: all
+  sudo: true
+  roles:
+    - { role: ./}
+
+  vars:
+       dns_nameservers:
+         - "8.8.8.8" # google dns
+         - "8.8.4.4" # google dns    
+
+#- include: docker/integration-tests.yml
+
