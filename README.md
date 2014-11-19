@@ -2,7 +2,7 @@
 
   [![Platforms](http://img.shields.io/badge/platforms-ubuntu-lightgrey.svg?style=flat)](#)
 
-Describe your role in a few paragraphs....
+Ensures that dns is properly installed (using `apt`) and configured
 
 
 
@@ -33,12 +33,12 @@ Describe how to use in more detail...
 ### Authors and license
 
 `dns` role was written by:
-- [Alban Andrieu](nabla.mobi) | [e-mail](mailto:alban.andrieu@free.fr) | [Twitter](https://twitter.com/AlbanAndrieu)
+- [Alban Andrieu](fr.linkedin.com/in/nabla/) | [e-mail](mailto:alban.andrieu@free.fr) | [Twitter](https://twitter.com/AlbanAndrieu) | [GitHub](https://github.com/AlbanAndrieu)
 - License: [GPLv3](https://tldrlegal.com/license/gnu-general-public-license-v3-%28gpl-3%29)
 
 ### Feedback, bug-reports, requests, ...
 
-Are [welcome](https://github.com/AlbanAndrieu/ansible-dns/issues>)!
+Are [welcome](https://github.com/AlbanAndrieu/ansible-dns/issues)!
 
 ***
 
