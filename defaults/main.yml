@@ -1,6 +1,7 @@
 ---
 dns_enabled: yes                       # Enable module
 
+defaultdomain: home.nabla.mobi
 defaultsearch: nt.france.nabla.fr. france.nabla.fr. nabla.fr.
 dns_nameservers:
   - "10.25.200.3" # work dns
