@@ -22,7 +22,7 @@
   lineinfile: regexp="^nameserver " line="nameserver {{ nameserver }}" dest=/etc/resolv.conf
   when: ns|failed
 
-- name: Checks if resolver is working properly with new nameserver
+- name: Checks if resolver is working properly with new nameserver (1)
   command: host -t A ansible.cc
   register: ns
   ignore_errors: yes
@@ -31,9 +31,10 @@
   command: dhclient
   when: ns|failed
     
-- name: Checks if resolver is working properly with new nameserver
+- name: Checks if resolver is working properly with new nameserver (2)
   command: host -t A ansible.cc
-    
+  ignore_errors: yes
+
 #- name: Final greeting
 #  pause: prompt="Don't worry about all the red above; if you made it here, your Vagrant VMs are probably fine !
 #    Please press [Enter]"
