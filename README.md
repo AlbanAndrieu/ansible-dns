@@ -1,4 +1,4 @@
-## dns
+## alban.andrieu.dns
 
   [![Platforms](http://img.shields.io/badge/platforms-ubuntu-lightgrey.svg?style=flat)](#)
 
@@ -12,16 +12,16 @@ Ensures that dns is properly installed (using `apt`) and configured
 List of default variables available in the inventory:
 
 ```yaml
-    ---
-    dns_enabled: yes                       # Enable module
+        dns_enabled: yes                       # Enable module
     
+    defaultdomain: home.nabla.mobi
     defaultsearch: nt.france.nabla.fr. france.nabla.fr. nabla.fr.
     dns_nameservers:
       - "10.25.200.3" # work dns
       - "10.21.200.3" # work dns 
       - "8.8.8.8" # google dns
       - "8.8.4.4" # google dns
-    nameserver: "8.8.8.8"
+    nameserver: ""
 ```
 
 
@@ -32,7 +32,7 @@ Describe how to use in more detail...
 
 ### Authors and license
 
-`dns` role was written by:
+`alban.andrieu.dns` role was written by:
 - [Alban Andrieu](fr.linkedin.com/in/nabla/) | [e-mail](mailto:alban.andrieu@free.fr) | [Twitter](https://twitter.com/AlbanAndrieu) | [GitHub](https://github.com/AlbanAndrieu)
 - License: [GPLv3](https://tldrlegal.com/license/gnu-general-public-license-v3-%28gpl-3%29)
 

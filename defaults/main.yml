@@ -1,4 +1,3 @@
----
 dns_enabled: yes                       # Enable module
 
 defaultdomain: home.nabla.mobi
