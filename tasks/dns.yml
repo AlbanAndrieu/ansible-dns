@@ -4,6 +4,7 @@
 - name: Configure resolv file
   template: src=resolv.conf.j2 dest=/etc/resolv.conf
   tags: configure
+  become: yes
   changed_when: false
 
 #needed for pidgin to work in file /etc/resolv.conf
@@ -21,6 +22,7 @@
 
 - name: Pushes new resolver configuration is resolver fails
   lineinfile: regexp="^nameserver " line="nameserver {{ nameserver }}" dest=/etc/resolv.conf
+  become: yes
   when: ns|failed
 
 - name: Checks if resolver is working properly with new nameserver (1)
@@ -31,6 +33,7 @@
 
 - name: Restart dhclient
   command: dhclient
+  become: yes
   when: ns|failed
 
 - name: Checks if resolver is working properly with new nameserver (2)
