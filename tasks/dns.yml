@@ -19,6 +19,7 @@
   command: host -t A ansible.cc
   register: ns
   ignore_errors: yes
+  changed_when: false
 
 - name: Pushes new resolver configuration is resolver fails
   lineinfile: regexp="^nameserver " line="nameserver {{ nameserver }}" dest=/etc/resolv.conf
