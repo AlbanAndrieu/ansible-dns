@@ -5,10 +5,8 @@
 
 [![Branch](http://img.shields.io/github/tag/AlbanAndrieu/ansible-dns.svg?style=flat-square)](https://github.com/AlbanAndrieu/ansible-dns/tree/master)
 [![Donate](https://img.shields.io/gratipay/AlbanAndrieu.svg?style=flat)](https://www.gratipay.com/~AlbanAndrieu)
-[![test-suite](https://img.shields.io/badge/test--suite-ansible--alban__andrieu__dns-blue.svg?style=flat)](https://github.com/AlbanAndrieu/test-suite/tree/master/ansible-alban_andrieu_dns/)
 [![Platforms](http://img.shields.io/badge/platforms-ubuntu-lightgrey.svg?style=flat)](#)
-[![Gittip](http://img.shields.io/gittip/alban.andrieu.svg)](https://www.gittip.com/alban.andrieu/)
-[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=AlbanAndrieu&url=https://github.com/AlbanAndrieu/ansible-dns&title=My ansible-dns&language=java&tags=github&category=software)
+[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=AlbanAndrieu&url=https://github.com/AlbanAndrieu/ansible-dns&title=ansible-dns&language=en_GB&tags=github&category=software)
 
 Ensures that dns is properly installed (using `apt`) and configured
 
@@ -71,7 +69,7 @@ Describe how to use in more detail...
 
 - License: [GPLv3](https://tldrlegal.com/license/gnu-general-public-license-v3-%28gpl-3%29)
 
-Copyright (c) 2016 [Alban Andrieu](https://alban.andrieu.com/)
+Copyright (c) 2017 [Alban Andrieu](https://alban.andrieu.com/)
 
 ### Feedback, bug-reports, requests, ...
 
