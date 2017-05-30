@@ -26,13 +26,13 @@ $ arm install alban.andrieu.dns
 
 Using `git`:
 ```shell
-$ git clone https://github.com/alban.andrieu/ansible-eclipse.git
+$ git clone https://github.com/AlbanAndrieu/ansible-dns.git
 ```
 
 ### Documentation
 
-More information about `alban.andrieu.dns` can be found in the
-[official alban.andrieu.dns documentation](https://docs.debops.org/en/latest/ansible/roles/ansible-dns/docs/).
+[comment]: <> (More information about `alban.andrieu.dns` can be found in the)
+[comment]: <> ([official alban.andrieu.dns documentation](https://docs.debops.org/en/latest/ansible/roles/ansible-dns/docs/).)
 
 
 ### Role variables
