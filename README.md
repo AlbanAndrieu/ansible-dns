@@ -31,8 +31,10 @@ $ git clone https://github.com/AlbanAndrieu/ansible-dns.git
 
 ### Documentation
 
-[comment]: <> (More information about `alban.andrieu.dns` can be found in the)
-[comment]: <> ([official alban.andrieu.dns documentation](https://docs.debops.org/en/latest/ansible/roles/ansible-dns/docs/).)
+<!---
+More information about `alban.andrieu.dns` can be found in the
+[official alban.andrieu.dns documentation](https://docs.debops.org/en/latest/ansible/roles/ansible-dns/docs/).
+-->
 
 
 ### Role variables
