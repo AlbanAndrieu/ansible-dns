@@ -1,10 +1,10 @@
 ---
 # This playbook contains common plays that will be run on all nodes.
 
-- name: Configure resolv file
-  template: src=resolv.conf.j2 dest=/etc/resolv.conf
-  tags: configure
-  become: yes
+- name: Checks if resolver is working properly (issues with some VBox/Host OS combinations)
+  command: host -t A ansible.cc
+  register: ns
+  ignore_errors: yes
   changed_when: false
 
 #needed for pidgin to work in file /etc/resolv.conf
@@ -14,6 +14,13 @@
 #search nabla.test.fr nabla.test.fr.
 #inside
 #/etc/resolvconf/resolv.conf.d/base
+
+- name: Configure resolv file
+  template: src=resolv.conf.j2 dest=/etc/resolv.conf
+  tags: configure
+  become: yes
+  changed_when: false
+  when: ns|failed
 
 - name: Checks if resolver is working properly (issues with some VBox/Host OS combinations)
   command: host -t A ansible.cc
