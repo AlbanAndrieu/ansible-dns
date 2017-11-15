@@ -19,6 +19,7 @@
   template: src=resolv.conf.j2 dest=/etc/resolv.conf
   tags: configure
   become: yes
+  ignore_errors: yes
   changed_when: false
   when: ns|failed
 
@@ -30,6 +31,7 @@
 
 - name: Pushes new resolver configuration is resolver fails
   lineinfile: regexp="^nameserver " line="nameserver {{ nameserver }}" dest=/etc/resolv.conf
+  ignore_errors: yes
   become: yes
   when: ns|failed
 
