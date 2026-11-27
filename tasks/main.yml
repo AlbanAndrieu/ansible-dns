@@ -1,7 +1,7 @@
 ---
 # This playbook contains common plays that will be run on all nodes.
 
-- include: dns.yml
+- ansible.builtin.import_tasks: dns.yml
   when: dns_enabled 
   tags: [dns]
   
